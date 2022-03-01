@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="female <= 0.5\nentropy = 0.997\nsamples = 100.0%\nvalue = [0.533, 0.467]\nclass = dies"] ;
+1 [label="age <= 12.0\nentropy = 0.769\nsamples = 60.6%\nvalue = [0.775, 0.225]\nclass = dies"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="pclass <= 2.5\nentropy = 0.85\nsamples = 4.2%\nvalue = [0.276, 0.724]\nclass = survives"] ;
+1 -> 2 ;
+3 [label="entropy = 0.0\nsamples = 2.2%\nvalue = [0.0, 1.0]\nclass = survives"] ;
+2 -> 3 ;
+4 [label="entropy = 0.985\nsamples = 2.0%\nvalue = [0.571, 0.429]\nclass = dies"] ;
+2 -> 4 ;
+5 [label="pclass <= 1.5\nentropy = 0.695\nsamples = 56.4%\nvalue = [0.813, 0.187]\nclass = dies"] ;
+1 -> 5 ;
+6 [label="entropy = 0.913\nsamples = 20.5%\nvalue = [0.671, 0.329]\nclass = dies"] ;
+5 -> 6 ;
+7 [label="entropy = 0.488\nsamples = 35.9%\nvalue = [0.894, 0.106]\nclass = dies"] ;
+5 -> 7 ;
+8 [label="pclass <= 2.5\nentropy = 0.634\nsamples = 39.4%\nvalue = [0.16, 0.84]\nclass = survives"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="fare <= 32.09\nentropy = 0.387\nsamples = 30.9%\nvalue = [0.076, 0.924]\nclass = survives"] ;
+8 -> 9 ;
+10 [label="entropy = 0.561\nsamples = 14.5%\nvalue = [0.131, 0.869]\nclass = survives"] ;
+9 -> 10 ;
+11 [label="entropy = 0.178\nsamples = 16.4%\nvalue = [0.027, 0.973]\nclass = survives"] ;
+9 -> 11 ;
+12 [label="fare <= 25.925\nentropy = 0.997\nsamples = 8.5%\nvalue = [0.466, 0.534]\nclass = survives"] ;
+8 -> 12 ;
+13 [label="entropy = 0.939\nsamples = 6.6%\nvalue = [0.356, 0.644]\nclass = survives"] ;
+12 -> 13 ;
+14 [label="entropy = 0.619\nsamples = 1.9%\nvalue = [0.846, 0.154]\nclass = dies"] ;
+12 -> 14 ;
+}
